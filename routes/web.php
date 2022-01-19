@@ -28,8 +28,17 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/gallery', function () {
 //     return 'Halaman Gallery';
 // });
+
+
+Route::get('/', function () {
+    return view('home', [
+        "title" => "Home"
+    ]);
+ });
+
 Route::get('/about', function () {
     return view('about', [
+        "title" => "About",
         "nama" => "Muamar Zidan Tri Antoro",
         "email" => "codeofomiru11@gmail.com",
         "gambar" => "logo.png"
@@ -37,14 +46,13 @@ Route::get('/about', function () {
 });
 
 
-// Route::get('/', function () {
-//     return view('home');
-// });
+
 
 // Route::get('/about', function () {
 //     return view('about');
 // });
-
-// Route::get('/gallery', function () {
-//     return view('gallery');
-// });
+Route::get('/gallery', function () {
+    return view('gallery' , [
+        "title" => "Gallery"
+    ]);
+});
