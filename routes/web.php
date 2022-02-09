@@ -47,8 +47,6 @@ Route::get('/about', function () {
 });
 
 
-
-
 // Route::get('/about', function () {
 //     return view('about');
 // });
@@ -59,6 +57,8 @@ Route::get('/gallery', function () {
 });
 
 Route::resource('/contact', ContactController::class);
+
+
 // Route::get('/contact', function () {
 //     return view('contact' , [
 //         "title" => "Contact"
