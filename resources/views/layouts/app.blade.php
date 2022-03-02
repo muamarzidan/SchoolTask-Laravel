@@ -12,23 +12,24 @@
     <!-- Title Page-->
     <title>Dashboard</title>
 
-    @include('partials/css')
+    @include('partials.css')
 
 </head>
 
 <body class="animsition">
     <div class="page-wrapper">
-        {{-- HEADER MOBILE --}}
-        @include('partials/headermobile')
-        
+        <!-- HEADER MOBILE-->
+        @include('partials.headermobile')
+        <!-- END HEADER MOBILE-->
+
         <!-- MENU SIDEBAR-->
-        @include('partials/sidebar')
+        @include('partials.sidebar')
         <!-- END MENU SIDEBAR-->
-        
+
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
-            @include('partials/header')
+            @include('partials.header')
             <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
@@ -37,9 +38,7 @@
             <!-- END PAGE CONTAINER-->
         </div>
     </div>
-
-   @include('partials/script')
-
+    @include('partials.script')
 </body>
 
 </html>
